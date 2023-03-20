@@ -1,0 +1,174 @@
+.Container{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 110px 0;
+}
+.Container.Dark{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.blog{
+    width: 58%;
+    margin: 0 auto;
+    text-align: left;
+}
+.details{
+    width: 100%;
+    height: 30%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.details p{
+    margin: 0;
+    color: rgb(155, 153, 153);
+    font-weight: 600;
+}
+.authordetails{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 2px;
+}
+.Container .authordetails:hover{
+    background-color: #f7f1e6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Container.Dark .authordetails:hover{
+    background-color: #1c1f23c9;
+}
+.Container .authordetails p{
+    color: rgb(0, 0, 0);
+}
+.Container.Dark .authordetails p{
+    color: white;
+}
+.authordp {
+    width: 30px;
+    height: 30px;
+    /* margin: 0 5px; */
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.authordp img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    
+}
+.heading{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+.content p{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+.content img{
+    margin: 20px 0;
+}
+.Container .fixedAuthorDetails{
+    position: fixed;
+    text-align: left;
+    background-color: #f7f1e6;
+    border-radius: 20px;
+    padding: 10px;
+    top: 30%;
+    left: -50px;
+    transform: translate(30%, 20px);
+}
+.Container.Dark .fixedAuthorDetails{
+    background-color: #1c1f23c9;
+    color: white;
+}
+.fixedAuthorDetails p{
+    margin: 0;
+}
+.bookmarkfalseicon,.likefalseicon{
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.fixedbuttonicons .bookmarkfalseicon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.fixedbuttonicons .likefalseicon{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.bookmarktrueicon,.liketrueicon{
+    margin: 0 5px;
+    font-size: 1rem;
+    color: #FFC038;
+    cursor: pointer;
+}
+.fixedbuttonicons .bookmarktrueicon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #FFC038;
+    cursor: pointer;
+}
+.fixedbuttonicons .liketrueicon{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #FFC038;
+    cursor: pointer;
+}
+.skeltonLoading{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+.userlikes{
+    float: right;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #FFC038;
+    color: black;
+    border-radius: 5px;
+}
+.userlikes1{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #FFC038;
+    color: black;
+    border-radius: 5px;
+}
+@media (max-width: 1200px) {
+    .Container{
+        padding: 110px 20px;
+        margin-top: 70px;
+        width: 100%;
+    }
+    .blog{
+        width: 100%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+    .Container .fixedAuthorDetails{
+        position: static;
+        display: block;
+        text-align: left;
+        left: 0px;
+        transform: translate(0%, 0px);
+    }
+}
+@media (max-width: 800px) {
+    .Container{
+        padding: 10px 20px;
+    }
+}

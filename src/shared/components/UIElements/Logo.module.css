@@ -1,0 +1,16 @@
+.Logo {
+    height: 50%;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+.Logo img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .Logo {
+        height: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.imagecontainer{
+    margin: 15px 0 20px 0;
+}
+.particularimagecontainer{
+    position: relative;
+}
+.particularimagecontainer button{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color: white;
+    outline: none;
+}
+.particularimagecontainer button:hover, 
+.particularimagecontainer button:active, 
+.particularimagecontainer button:focus{
+    outline: none;
+}

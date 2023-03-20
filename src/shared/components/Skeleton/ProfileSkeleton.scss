@@ -1,0 +1,94 @@
+:root {
+    --three-card-padding: 24px;
+    --three-card-height: 500px;
+    --three-card-skeleton: linear-gradient(#090B10 var(--three-card-height), transparent 0);
+    --three-card-skeleton-light: linear-gradient(#fff var(--three-card-height), transparent 0);
+
+    --three-avatar-size: 160px;
+    --three-avatar-position: center 0px;
+    --three-avatar-skeleton: radial-gradient(circle 80px at center, #1c1f23c9 99%, transparent 0);
+    --three-avatar-skeleton-light: radial-gradient(circle 80px at center, #f7f1e6 99%, transparent 0);
+
+    --three-title-height: 50px;
+    --three-title-width: 27%;
+    --three-title-position: center 200px;
+    --three-title-skeleton: linear-gradient(#1c1f23c9 var(--three-title-height), transparent 0);
+    --three-title-skeleton-light: linear-gradient(#f7f1e6 var(--three-title-height), transparent 0);
+
+    --three-desc-line-height1: 20px;
+    --three-desc-line-skeleton1: linear-gradient(#1c1f23c9 var(--three-desc-line-height1), transparent 0);
+    --three-desc-line-skeleton1-light: linear-gradient(#f7f1e6 var(--three-desc-line-height1), transparent 0);
+    --three-desc-line-1-width: 20%;
+    --three-desc-line-1-position: center 280px;
+    --three-desc-line-height2: 100px;
+    --three-desc-line-skeleton2: linear-gradient(#1c1f23c9 var(--three-desc-line-height2), transparent 0);
+    --three-desc-line-skeleton2-light: linear-gradient(#f7f1e6 var(--three-desc-line-height2), transparent 0);
+    --three-desc-line-2-width: 100%;
+    --three-desc-line-2-position: center 350px;
+
+    --three-footer-height: 0px;
+    --three-footer-position: 0 calc(var(--three-card-height) - var(--three-footer-height));
+    --three-footer-skeleton: linear-gradient(rgb(22, 23, 24) var(--three-footer-height), transparent 0);
+    --three-footer-skeleton-light: linear-gradient(#fff var(--three-footer-height), transparent 0);
+
+    --three-blur-width: 200px;
+    --three-blur-size: var(--blur-width) calc(var(--card-height) - var(--three-footer-height));
+}
+.profile_Skeleton_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileSkeleton {
+    width: 100%;
+    margin: 0 auto;
+    height: var(--three-card-height);
+
+    &:empty::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        // box-shadow: 0 10px 45px rgba(0,0,0, .1);
+
+        background-image: linear-gradient(
+                90deg,
+                rgba(#090B10, 0) 0,
+                rgba(#090B10, 0.8) 50%,
+                rgba(#090B10, 0) 100%
+            ),
+            var(--three-title-skeleton), var(--three-desc-line-skeleton1), var(--three-desc-line-skeleton2), var(--three-avatar-skeleton),
+            var(--three-footer-skeleton), var(--three-card-skeleton);
+
+        background-size: var(--blur-size), var(--three-title-width) var(--three-title-height),
+            var(--three-desc-line-1-width) var(--three-desc-line-height1), var(--three-desc-line-2-width) var(--three-desc-line-height2),
+            var(--three-avatar-size) var(--three-avatar-size), 100% var(--three-footer-height), 100% 100%;
+
+        background-position: -150% 0, var(--three-title-position), var(--three-desc-line-1-position), var(--three-desc-line-2-position),
+            var(--three-avatar-position), var(--three-footer-position), 0 0;
+
+        background-repeat: no-repeat;
+        animation: loading3 0.5s infinite;
+    }
+}
+.profileSkeleton.light {
+    &:empty::after {
+        background-image: linear-gradient(
+                90deg,
+                rgba(#fff, 0) 0,
+                rgba(#fff, 0.8) 50%,
+                rgba(#fff, 0) 100%
+            ),
+            var(--three-title-skeleton-light), var(--three-desc-line-skeleton1-light), var(--three-desc-line-skeleton2-light), var(--three-avatar-skeleton-light),
+            var(--three-footer-skeleton-light), var(--three-card-skeleton-light);
+        animation: loading3 0.5s infinite;
+    }
+}
+
+@keyframes loading3 {
+    to {
+        background-position: 150% 0, var(--three-title-position), var(--three-desc-line-1-position), var(--three-desc-line-2-position),
+            var(--three-avatar-position), var(--three-footer-position), 0 0;
+    }
+}

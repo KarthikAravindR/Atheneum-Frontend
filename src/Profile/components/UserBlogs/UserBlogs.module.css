@@ -1,0 +1,78 @@
+.userBlogContainer{
+    min-height: 100vh;
+    height: auto;
+    background-color: #ffffff;
+}
+.userBlogContainer.Dark{
+    background-color: #090B10;
+}
+.userBlogAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.userBlogContainer .userBlogHeading{
+    color: black;
+    margin: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid #FFc038;
+}
+.userBlogContainer.Dark .userBlogHeading{
+    color: white;
+}
+.userblogscontentempty{
+    margin: 50px auto;
+    width: 100%;
+}
+.userblogscontentempty img{
+    width: 300px;
+    height: 300px;
+    margin: 0 10%;
+}
+.userBlogimageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+}
+.userBlogContainer .userBlogCardContainer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f7f1e6;
+    padding: 20px 20px 5px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.userBlogContainer.Dark .userBlogCardContainer{
+    background-color: #1c1f23c9;
+}
+.userBlogCardContainer button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color: white;
+    outline: none;
+}
+
+@media (max-width: 800px) {
+    .userblogscontentempty{
+        margin: 50px auto;
+        width: 100%;
+        color: white;
+    }
+    .userblogscontentempty img{
+        width: 200px;
+        height: 200px;
+        margin: 0 10%;
+    }
+}

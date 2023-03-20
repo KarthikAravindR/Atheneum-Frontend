@@ -1,0 +1,156 @@
+.trigger-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    transition: transform 0.4s;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff ;
+}
+.trigger-menu-wrapper.Dark {
+    color: rgb(226, 225, 225);
+    background-color: #090B10 ;
+}
+.page-header .trigger-menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.page-header .trigger-menu svg {
+    fill: var(--white);
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.page-header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    text-align: center;
+    padding: 15vh 0 5vh;
+    overflow: auto;
+    z-index: 1;
+    background-color: #0B0F10 ;
+}
+.page-header .menu a {
+    font-size: 3rem;
+}
+
+.page-header .sub-menu a {
+    font-size: 1.5rem;
+}
+.page-main section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.page-main section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+.page-header .trigger-menu svg {
+    transition: transform 0.3s;
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
+.menu-open .page-header .menu {
+    display: block;
+}
+
+.menu-open .page-header svg {
+    transform: rotate(45deg);
+}
+.trigger-menu-wrapper {
+    transition: transform 0.4s;
+}
+
+.scroll-down .trigger-menu-wrapper {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .trigger-menu-wrapper {
+    transform: none;
+}
+
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+.ToolbarLogo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+.ToolbarLogo p{
+    font-weight: 900;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+}
+.DesktopSearch{
+    width: 33%;
+}
+.Toolbar_User_Profile{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+.Toolbar_User_icon{
+    color: #FFC038;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    cursor: pointer;
+    padding:  0 10px;
+    border-radius: 7px;
+}
+.Toolbar_User_icon:hover{
+    background-color: rgba(42, 43, 44, 0.541);
+}
+@media (max-width: 1100px) {
+    .trigger-menu-wrapper  {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 700px) {
+    .ToolbarLogo p{
+        font-size: 1.5rem;
+    }
+    .DesktopSearch{
+        display: none;
+    }
+    .Toolbar_User_Profile{
+        width: 50%;
+    }
+    .Toolbar_User_icon{
+        display: none;
+    }
+    .ToolbarLogo{
+        width: 50%;
+        height: 50%;
+    }
+}

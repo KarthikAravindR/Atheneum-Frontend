@@ -1,0 +1,52 @@
+.Input {
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-align: left;
+}
+
+.Invalid{
+    display: inline !important;
+    font-size: 10px;
+    color: red;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.Label {
+    text-align: left;
+    text-transform: capitalize;
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #ccc;
+}
+.No {
+    display: none;
+}
+
+.Inputelement {
+    outline: none;
+    border: white;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.Inputelement::placeholder{
+    font-size: 12px;
+    color: rgb(134, 133, 133);
+    /* font-family: cursive; */
+}
+.Inputelement:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}

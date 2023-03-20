@@ -1,0 +1,54 @@
+.Modal1{
+    position: fixed;
+    z-index: 500;
+    background-color: white ;
+    color:black;
+    border: 1px solid white;
+    width: 400px;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 50% !important;
+    top: 50%!important;
+    transform: translate(-50%, -50%) !important;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.modal_action_buttons{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal_action_buttons2{
+    background-color: #ff0404;
+    border: 1px solid #ff3838;
+    color: white;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.modal_action_buttons1 {
+    background-color: #aaa9a9;
+    border: 1px solid #aaa9a9;
+    color: #0D272D;
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .Modal1 {
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

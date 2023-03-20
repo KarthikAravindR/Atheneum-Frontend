@@ -1,0 +1,65 @@
+.userBookmarksContainer{ 
+    min-height: 100vh;
+    height: auto;
+    padding: 110px 120px;
+    background-color: #ffffff;
+}
+.userBookmarksContainer.Dark{ 
+    background-color: #090B10;
+}
+.userBookmarksAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.userBookmarksContainer .userBookmarksHeading{
+    color: black;
+    margin: 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid #FFc038;
+}
+.userBookmarksContainer.Dark .userBookmarksHeading{
+    color: white;
+}
+.bookmarkcontentempty{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.bookmarkcontentempty img{
+    width: 300px;
+    height: 300px;
+}
+.userBookmarksimageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.userBookmarksContainer .userBookmarksCardContainer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f7f1e6;
+    padding: 20px 20px 5px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.userBookmarksContainer.Dark .userBookmarksCardContainer{
+    background-color: #1c1f23c9;
+}
+.skeltonLoading{
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .userBookmarksContainer{ 
+        padding: 0 20px;
+    }
+    .skeltonLoading{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+}

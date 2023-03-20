@@ -1,0 +1,97 @@
+
+.homeheaderwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0 70px;
+    color: rgb(43, 42, 42);
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: transform 0.4s;
+    justify-content: space-between;
+}
+.homeheaderwrapper.Dark{
+    color: rgb(226, 225, 225);
+    background-color: #090B10;
+}
+
+.homeheaderLogo{
+    /* height: 100%; */
+    width: 33%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.homeheaderLogo p{
+    font-weight: 900;
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 2rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.HomeHeader_DesktopSearch{
+    width: 33%;
+    margin: 10px 0;
+}
+.HomeHeader_MobileSearch{
+    width: 100%;
+    display: none;
+}
+.HomeHeader_User_Profile{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.HomeHeader_User_icon{
+    color: #FFC038;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    cursor: pointer;
+    padding:  0 10px;
+    border-radius: 7px;
+}
+.HomeHeader_User_icon:hover{
+    background-color: rgba(42, 43, 44, 0.541);
+}
+@media (max-width: 1100px) {
+    .homeheaderwrapper {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 700px) {
+    .homeheaderwrapper {
+        padding: 0 10px;
+    }
+    .homeheaderLogo{
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    .homeheaderLogo p{
+        font-size: 1.5rem;
+    }
+    .HomeHeader_User_Profile{
+        width: 30%;
+    }
+    .HomeHeader_User_icon{
+        display: none;
+    }
+    .HomeHeader_DesktopSearch{
+        display: none;
+    }
+    .HomeHeader_MobileSearch{
+        display: block;
+        margin: 10px 0;
+    }
+    .homeheaderLogo{
+        flex-grow: 1;
+    }
+}

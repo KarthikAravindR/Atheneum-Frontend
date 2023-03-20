@@ -1,0 +1,108 @@
+.MostViewedContainer{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgb(172, 169, 169);
+}
+.MostViewedContainer.Dark{
+    border-bottom: 1px solid rgb(73, 72, 72);
+}
+.MostViewedContainer .MostViewedContainerTitle{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: rgb(43, 42, 42);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 27px;
+}
+.MostViewedContainer.Dark .MostViewedContainerTitle{
+    color: white;
+}
+.MostViewedContainerTitle img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+.MostViewedArticleAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.MostViewedArticleContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+}
+.ArticleContainer{
+    width: 33%;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: column; */
+}
+.MostViewedContainer .ArticleContainerNumber{
+    font-size: 2rem;
+    color: rgb(172, 169, 169);
+    padding: 0px 16px;
+    font-weight: bolder;
+    /* font-family:cursive; */
+}
+.MostViewedContainer.Dark .ArticleContainerNumber{
+    color: rgb(75, 74, 74);
+}
+.MostViewedAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(73, 72, 72);
+}
+@media (max-width: 1100px) {
+    .MostViewedContainer{
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgb(73, 72, 72);
+    }
+    .MostViewedContainerTitle{
+        height: auto;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    .ArticleContainer{
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .ArticleContainerNumber{
+        font-size: 1.5rem;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+@media (max-width: 800px) {
+    .MostViewedContainer{
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgb(73, 72, 72);
+    }
+    .MostViewedContainerTitle{
+        height: auto;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    .ArticleContainer{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .ArticleContainerNumber{
+        font-size: 1.5rem;
+        padding-right: 8px;
+        padding-left: 0;
+    }
+}

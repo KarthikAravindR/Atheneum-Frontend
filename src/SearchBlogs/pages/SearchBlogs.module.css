@@ -1,0 +1,93 @@
+.searchContainer{
+    min-height: 100vh;
+    height: auto;
+    padding: 110px 120px;
+    background-color: #ffffff;
+}
+.searchContainer.Dark{
+    background-color: #090B10;
+}
+.searchcontentempty{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.searchcontentempty img{
+    width: 300px;
+    height: 300px;
+}
+.searchContainer .searchHeading{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 2rem;
+    border-bottom: 1px solid #FFc038;
+}
+.searchContainer.Dark .searchHeading{
+    color: white;
+}
+.searchSearchAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.searchSearchContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+}
+.searchContainer .searchCardContainer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f7f1e6;
+    padding: 20px 20px 5px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    /* flex-direction: column; */
+}
+.searchContainer.Dark .searchCardContainer{
+    background-color: #1c1f23c9;
+}
+.searchContainerNumber{
+    font-size: 2rem;
+    color: rgb(75, 74, 74);
+    padding: 0px 16px;
+    font-weight: bolder;
+    font-family:cursive;
+}
+.searchAuthorContainer{
+    display: flex;
+    flex-wrap: wrap;    
+    width: 20%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(73, 72, 72);
+}
+.skeltonLoading{
+    margin: 0 auto;
+    width: 70%;
+}
+@media (max-width: 800px) {
+    .searchContainer{ 
+        margin-top: 150px;
+        padding: 0 20px;
+    }
+    .searchHeading{
+        width: 100%;
+    }
+    .skeltonLoading{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .searchSearchAuthorContainer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+.writearea{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+    height: auto;
+    min-height: 30px;
+    display:inline-block;
+    font-size: 24px;
+    text-align: left;
+    overflow-y: hidden;
+    background-color: #f7f1e6 ;
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 4px;
+}
+.writearea.Dark{
+    background-color: #1c1f23c9 ;
+    color: rgb(255, 255, 255);
+}
+.title{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: inherit;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    height: 100px;
+    max-height: max-content;
+    display:inline-block;
+    text-align: left;
+    overflow-y: hidden;
+    background-color: #f7f1e6 ;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+.title.Dark{
+    background-color: #1c1f23cb ;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 800px) {
+    .writearea{
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    .title{
+        font-size: 1.3rem;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+}

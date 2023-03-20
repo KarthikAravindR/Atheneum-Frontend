@@ -1,0 +1,262 @@
+.welcomemedia {
+    font-size: 2rem;
+    color:#FFC038;
+}
+p{
+    margin: 0;
+}
+.Authentication {
+    background-color: #f7f1e6;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#egg {
+    width: 100%;
+    height: 100%;
+    background: #FFC038;
+    /* padding: 27px 10px 10px 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 63px 63px 63px 0px / 108px 108px 72px 2px;
+    border-radius: 10% 90% 50% 50% / 90% 10% 90% 40%;
+}
+.Authenticationarea {
+    background-color: white;
+    width: 97%;
+    height: 95%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.227),
+        0 6px 20px 0 rgba(0, 0, 0, 0.227);
+    display: flex;
+    padding-right: 12px;
+    background-color: #0B0F10;
+}
+.people {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #0B0F10;
+}
+.authtitle{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center; 
+    padding: 0 77px;
+}
+.authtitle p{
+    color: #7895A2;
+    font-size: 2rem;
+    margin-top: px;
+    font-family: 'Playfair Display', serif;
+}
+
+.peopleimg {
+    width: 100%;
+    height: 80%;
+}
+.peopleimg img{
+    width: 100%;
+    height: 100%;
+}
+.Authenticationform {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    background-color: #0B0F10;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.Auth {
+    height: max-content;
+    width: 70%;
+    margin: auto;
+    line-height: 12px;
+    box-sizing: border-box;
+    padding: 12px 0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.signupbutton {
+    display: flex;
+    width: 50%;
+    margin: 10px auto 0 auto ;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.signupbutton button {
+    width: 70%;
+    margin: 0 5px;
+    padding: 0;
+    margin: auto;
+    color: black;
+    font-size: 12px;
+    background-color: #008c8c;
+    border: 1px solid #008c8c;
+    min-height: 30px;
+    border-radius: 100px;
+}
+.signupbutton button:hover {
+    color: black;
+    background-color: #008c8c;
+    border: 1px solid #008c8c;
+}
+.or {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    align-items: center;
+}
+.ordash {
+    width: 45%;
+    border: 1px solid #B35639;
+    margin-top: 5px;
+}
+.orword {
+    width: 10%;
+    font-size: 17px;
+    margin: 0 5px;
+    color: #B35639;
+}
+.errormessage {
+    width: 97%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    min-height: 40px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+}
+.signupbutton1 {
+    display: flex;
+    width: 70%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    text-align: center;
+}
+.signupbutton1 button {
+    width: 70%;
+    margin: 0 5px;
+    margin: auto;
+    font-size: 12px;
+    background-color: rgb(238, 237, 237);
+    min-height: 40px;
+    border-radius: 100px !important;
+    box-shadow: 0 1px 2px 0 rgba(197, 197, 197, 0.227),
+        0 6px 20px 0 rgba(199, 198, 198, 0.227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Auth_GFB{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googlebutton {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100px !important;
+    margin: 0 20px !important;
+}
+.googlebutton:hover,
+.googlebutton:active,
+.googlebutton:focus,
+.kep-login-facebook.metro:hover,
+.kep-login-facebook.metro:active,
+.kep-login-facebook.metro:focus {
+    outline: none
+}
+.googlebutton div{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    /* padding: 1px 1px 0px 1px !important; */
+    border-radius: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02), 0 2px 2px rgba(0, 0, 0, 0.02),
+    0 4px 4px rgba(0, 0, 0, 0.02), 0 8px 8px rgba(0, 0, 0, 0.02),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+.googlebutton span{
+    padding:0 !important
+}
+.kep-login-facebook.metro{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100px !important;
+    padding: 0 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02), 0 2px 2px rgba(0, 0, 0, 0.02),
+    0 4px 4px rgba(0, 0, 0, 0.02), 0 8px 8px rgba(0, 0, 0, 0.02),
+    0 16px 16px rgba(0, 0, 0, 0.1) !important;
+}
+.fa-facebook{
+    margin: 0 5px !important;
+}
+.signupbutton2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #7895A2;
+    margin-bottom: 20px;
+}
+.developer {
+    text-align: center;
+    font-size: 0.5rem;
+    color: #7895A2;
+}
+.developer span{
+    color: #ffc038;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Auth .Input {
+    display: block;
+    /* margin: 50px auto; */
+}
+.signupbutton {
+    text-align: center;
+}
+@media (max-width: 950px) {
+    .people {
+        display: none;
+    }
+    .Authenticationarea {
+        display: block;
+        padding: 0 10px;
+    }
+    .Authenticationform{
+        width: 70%;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 600px) {
+    .Authenticationform{
+        width: 100%;
+        margin-top: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Auth {
+        width: 100%;
+    }
+}

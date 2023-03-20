@@ -1,0 +1,70 @@
+.form1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #f7f1e6;
+    font-size: 12px;
+}
+.form1.Dark {
+    border: 1px solid #1c1f23c9;
+}
+.form1 .searchbar1 {
+    padding:12px 0px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 97%;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: #f7f1e6;
+    border:1px solid #f7f1e6;
+    color: #090B10;
+}
+.form1.Dark .searchbar1 {
+    background-color: #1c1f23c9;
+    border:1px solid #1c1f23c9;
+    color: #ffc038;
+}
+.form1 .searchbar1:hover,.form1 .searchbar1:focus ,.form1 .button2:hover,.form1 .button2:focus{
+    border: 1px solid #f7f1e6;
+    outline: none;
+}
+.form1.Dark .searchbar1:hover, .form1.Dark .searchbar1:focus ,.form1.Dark .button2:hover,.form1.Dark .button2:focus{
+    border: 1px solid #1c1f23c9;
+}
+.form1 .searchbar1::placeholder{
+    color: #000000;
+}
+.form1.Dark .searchbar1::placeholder{
+    color: #facb65;
+}
+.form1 .searchicon{
+    background-color: #f7f1e6;
+    border:1px solid #f7f1e6;
+    height: 30px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    color: #ffc038;
+}
+.form1.Dark .searchicon{
+    background-color: #1c1f23c9;
+    border:1px solid #1c1f23c9;
+}
+
+.form1 .buttonserach {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    width: 40px;
+    height: 30px;
+    font-size: 1.1rem;
+    border: 1px solid #f7f1e6;
+    background-color: #f7f1e6;
+    color: #000000;
+    padding-top: 5px;
+}
+.form1.Dark .buttonserach {
+    color: #ffc038;
+    border: 1px solid #1c1f23c9;
+    background-color: #1c1f23c9;
+}
